@@ -12,6 +12,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "authors")
 public class Author {
 
+    public Author(String firstName, String secondName) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+    }
+
     @Id
     private String id;
 
